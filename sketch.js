@@ -12,8 +12,7 @@ var cars, car1, car2, car3, car4;
 
 
 function setup(){
-  canvas = createCanvas(displayWidth , displayHeight);
-  text(mouseX,mouseY,130,130)
+  canvas = createCanvas(displayWidth - 20, displayHeight-30);
   database = firebase.database();
   game = new Game();
   game.getState();
